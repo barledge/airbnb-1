@@ -1,4 +1,4 @@
-html, body, h1 {
+html, body, h1, ul {
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -7,6 +7,7 @@ html, body, h1 {
 body {
   display: flex;
   align-items: center;
+  color: #333;
 }
 
 a {
@@ -40,24 +41,31 @@ a:hover {
   bottom: 0;
 }
 
-h1, p {
-  color: #333;
+.overlay.top.left {
+  z-index: 100;
+}
+
+.overlay.left p {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.overlay.right h1, .overlay.right p {
+  width: 250px;
   padding: 5px;
-  width: 200px;
+}
+
+h1, p {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 32px;
   margin-bottom: 15px;
 }
 
-p {
+p, li {
   font-size: 18px;
-}
-
-p a {
-  text-decoration: underline;
 }
 
 #img-current {
@@ -82,6 +90,32 @@ p a {
 
 .hidden {
   display: none;
+}
+
+#menu-overlay {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  padding: 15px;
+}
+
+#menu-overlay.show {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 1060px) {

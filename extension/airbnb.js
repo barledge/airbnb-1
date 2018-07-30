@@ -43,4 +43,17 @@ function main() {
   console.log(nextRoom)
 }
 
+let menuToggleButton = document.getElementById('menu-toggle')
+
+menuToggleButton.onclick = function(e) {
+  let menu = document.getElementById('menu-overlay')
+  if (menu.classList.contains('show')) {
+    menuToggleButton.innerHTML = 'Menu'
+  } else {
+    menuToggleButton.innerHTML = 'Close'
+  }
+
+  menu.classList.toggle('show')
+}
+
 main()
