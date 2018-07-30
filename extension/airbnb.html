@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>New tab</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="mapbox/mapbox-gl.js"></script>
+    <link href="mapbox/mapbox-gl.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="full">
+      <img id="img-current" src="">
+      <div class="overlay right bottom">
+        <div id="map"></div>
+      </div>
+      <div class="overlay right top">
+        <h1>
+          <a id="title-current" href="htts://airbnb.com"></a>
+        </h1>
+        <p>$<span id="price-current"></span>/night <em>(updated 7/29)</em></p>
+      </div>
+    </div>
+    <div class="hidden">
+      <p>Next</p>
+      <img id="img-next" src="">
+    </div>
+
+    <script src="data.js"></script>
+    <script src="airbnb.js"></script>
+
+    <script src="map.js"></script>
+  </body>
+</html>
