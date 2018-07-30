@@ -1,6 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "Travel Somewheres",
+	"name": "Random bnb",
+	"description": "Discover a random room on Airbnb with each tab",
 	"version": "0.1",
 	"chrome_url_overrides": {
 		"newtab": "airbnb.html"
@@ -8,5 +9,8 @@
 	"permissions": [
 	],
 	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
 	}
 }
